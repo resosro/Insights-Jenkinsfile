@@ -12,8 +12,7 @@ pipeline{
             steps{
                 git branch: 'main', credentialsId: 'd1e86ef9-07a6-461b-b8c7-4805e9572662', url: 'https://github.com/resosro/Insights-Desktop-Pipeline'
                 echo "branch pulled"
-                bat "ls"
-                bat "cd .\\scripts"
+                bat "cd .\\scripts ls"
                 bat "ls"
                 echo "${PWD}"
                 bat "${PWD}\\Insights-Desktop-Pipeline\\scripts\\build.ps1"
